@@ -37,7 +37,6 @@ jobs:
           
   my_first_job:
     runs-on: self-runner
-    
     steps:
       - name: Docker Image
         uses: docker://alpine:3.8
