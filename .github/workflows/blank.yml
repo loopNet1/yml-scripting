@@ -17,7 +17,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: self-runner
+    runs-on: self-hosted
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -35,7 +35,7 @@ jobs:
           echo test, and deploy your project.
           
   my_first_job:
-    runs-on: self-runner
+    runs-on: self-hosted
     steps:
       - name: Docker Image
         uses: docker://alpine:3.8
