@@ -38,4 +38,5 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Docker Image
-        uses: docker://alpine:3.8
+        run: |
+          docker pull alpine:3.8
