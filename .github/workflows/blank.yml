@@ -45,8 +45,8 @@ jobs:
     # Server address of Docker registry. If not set then will default to Docker Hub
          registry: https://registry.hub.docker.com 
     # Username used to log against the Docker registry
-         username: ${{DOCKER_USERNAME}}
+         username: ${{  secrets.DOCKER_USERNAME }}
     # Password or personal access token used to log against the Docker registry
-         password: ${{DOCKER_PASSWORD}}
+         password: ${{ secrets.DOCKER_PASSWORD }}
     # Specifies whether the given registry is ECR (auto, true or false)
          ecr: false
