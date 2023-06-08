@@ -47,6 +47,14 @@ jobs:
         pwd
         ls -al
         
+  test-build:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build Docker
+      run: |
+        echo "Working"
+        
 
 
       
