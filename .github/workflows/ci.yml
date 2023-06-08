@@ -47,6 +47,12 @@ jobs:
         pwd
         ls -al
         
+---
+name: test
+on:
+  push:
+    branches: [ master ]
+jobs:
   test-build:
     runs-on: windows-latest
     steps:
