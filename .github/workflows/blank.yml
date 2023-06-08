@@ -37,11 +37,18 @@ jobs:
   my_first_job:
     runs-on: ubuntu-latest
     steps:
-      -
+    - name: Build and Push Docker Image
+      uses: mr-smithers-excellent/docker-build-push@v4
+      with:
+        image: omkarphadtare321/catnip:tagname
+        registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME })
+        password: ${{ secrets. DOCKER_PASSWORD ⅓)
+#      -
         # Setting up Docker Buildx with docker-container driver is required
         # at the moment to be able to use a subdirectory with Git context
-        name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
+#         name: Set up Docker Buildx
+#         uses: docker/setup-buildx-action@v2
 #       -
 #         name: Build and push
 #         uses: docker/build-push-action@v4
