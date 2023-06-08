@@ -1,3 +1,4 @@
-FROM alpine:3.17
-ENV NODE_VERSION 20.2.0
-RUN echo "Working"
+FROM nginx
+COPY wrapper.sh /
+COPY html /usr/share/nginx/html
+CMD ["./wrapper.sh"]
