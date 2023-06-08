@@ -1,4 +1,4 @@
-FROM node:latest
-ADD .
-WORKDIR .
-CMD echo "working"
+# escape=`
+
+FROM microsoft/nanoserver
+RUN echo "Working"
