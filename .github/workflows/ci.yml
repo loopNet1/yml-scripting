@@ -44,6 +44,8 @@ jobs:
     - name: Push Docker
       run: |
         docker push omkarphadtare321/jdk
+        pwd
+        ls -al
         
 
 
