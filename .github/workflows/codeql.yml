@@ -20,7 +20,7 @@ jobs:
 #     # A comma-separated list of CodeQL packs to include in the bundle
 #          packs: 
     # Root directory where the codeql-workspace.yml file is located
-         workspace: .github/workflow/codeql.yml
+         workspace: /.github/workflow/codeql.yml
     # Upload the created bundle
       #   upload: # optional, default is true
     # 
