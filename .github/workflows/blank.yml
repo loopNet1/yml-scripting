@@ -42,8 +42,8 @@ jobs:
       with:
         image: omkarphadtare321/catnip:tagname
         registry: docker.io
-        username: ${{ secrets.DOCKER_USERNAME })
-        password: ${{ secrets. DOCKER_PASSWORD ⅓)
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets. DOCKER_PASSWORD }}
 #      -
         # Setting up Docker Buildx with docker-container driver is required
         # at the moment to be able to use a subdirectory with Git context
